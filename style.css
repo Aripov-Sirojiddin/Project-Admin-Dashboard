@@ -22,7 +22,7 @@ body {
 
 .sub-header {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 2fr;
     align-items: center;
 }
 
@@ -78,6 +78,10 @@ body {
     background: rgb(19, 152, 247);
 }
 
+.blue-button:hover{
+    background: rgb(116, 186, 247);
+}
+
 .sidebar {
     grid-row: 1/3;
     grid-column: 1/2;
@@ -130,8 +134,8 @@ body {
 }
 
 .avatar {
-    height: 3rem;
-    width: 3rem;
+    height: 2.5rem;
+    width: 2.5rem;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -148,15 +152,25 @@ body {
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
-
+.announcements {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
 .projects {
     grid-row: 1/3;
 }
 
-.announcements-box {
+.white-box {
     border-radius: 10px;
     background: white;
-    padding: 1.2rem 2rem 0.2rem;
+}
+.announcements-padding {
+    padding-block-start: 1rem;
+    padding-inline: 2rem;
+}
+
+.inline-1rem {
+    padding-inline: 1rem;
 }
 
 hr {
@@ -171,10 +185,12 @@ hr {
 
 .sub-title {
     margin: 0;
-    font-weight: bold;
+    padding: 0;
     font-size: small;
 }
-
+.notification:hover {
+    fill: rgb(116, 186, 247);
+}
 .text {
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -185,8 +201,18 @@ hr {
     color: grey;
     text-overflow: ellipsis;
     margin: 0;
-    margin-bottom: 1rem;
     font-size: x-small;
 }
+.padding-trending {
+    padding-block: 0.5rem;
+}
+.user{
+    padding-block-start: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-.trending {}
+.white-box:nth-last-child(1){
+    padding-block-end: 1rem;
+}
