@@ -17,6 +17,35 @@ body {
     grid-column: 2/2;
     box-shadow: 0px 5px 5px gainsboro;
 }
+.sub-header{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+}
+.sub-header .search {
+    display: flex;
+    margin-inline: 2rem;
+    align-items: center;
+}
+
+.sub-header .search input {
+    border: none;
+    background: rgb(229, 232, 232);
+    width: 100%;
+    border-radius: 5rem;
+    padding: 0.5rem;
+}
+
+.sub-header .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-inline-end: 2rem;
+    justify-content: end;
+    font-weight: bold;
+    font-size: large;
+}
 
 .sidebar {
     grid-row: 1/3;
@@ -62,6 +91,17 @@ body {
     max-width: 25px;
 }
 
-.black {
+.icon-black {
     fill: black;
+}
+
+.avatar {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.avatar-big{
+    height: 5rem;
+    width: 5rem;
 }
