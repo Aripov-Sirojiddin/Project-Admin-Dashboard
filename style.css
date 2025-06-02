@@ -16,16 +16,16 @@ body {
     grid-row: 1/2;
     grid-column: 2/2;
     box-shadow: 0px 5px 5px gainsboro;
+    padding: 0.5rem 3rem 0.5rem;
 }
 .sub-header{
-    padding: 1rem;
     display: grid;
     grid-template-columns: 3fr 1fr;
     align-items: center;
 }
 .sub-header .search {
     display: flex;
-    margin-inline: 2rem;
+    margin-inline-end: 2rem;
     align-items: center;
 }
 
@@ -41,12 +41,39 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-inline-end: 2rem;
+    margin-inline-start: 2rem;
     justify-content: end;
     font-weight: bold;
     font-size: large;
 }
 
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header .user-greeting{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.blue-button {
+    border: none;
+    border-radius: 3rem;
+    color: white;
+    font-weight: bold;
+    padding:0.7rem 1.5rem 0.7rem;
+    background: rgb(19, 152, 247);
+}
 .sidebar {
     grid-row: 1/3;
     grid-column: 1/2;
@@ -89,6 +116,7 @@ body {
     place-self: center;
     fill: white;
     max-width: 25px;
+    min-width: 25px;
 }
 
 .icon-black {
