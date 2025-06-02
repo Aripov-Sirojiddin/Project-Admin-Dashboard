@@ -128,7 +128,10 @@ body {
     max-width: 25px;
     min-width: 25px;
 }
-
+.icon-smaller {
+    max-width: 20px;
+    min-width: 20px;
+}
 .icon-black {
     fill: black;
 }
@@ -150,19 +153,18 @@ body {
     background: rgb(235, 243, 247);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 .announcements {
     grid-column: 2/3;
-    grid-row: 1/2;
 }
-.projects {
-    grid-row: 1/3;
+.trending {
+    grid-column: 2/3;
 }
 
 .white-box {
     border-radius: 10px;
     background: white;
+    box-shadow: 5px 5px 5px gainsboro;
 }
 .announcements-padding {
     padding-block-start: 1rem;
@@ -215,4 +217,36 @@ hr {
 
 .white-box:nth-last-child(1){
     padding-block-end: 1rem;
+}
+
+.card {
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 40fr;
+    z-index: 1;
+    box-shadow: 5px 5px 5px gainsboro;
+    background: white;
+}
+
+.card-content {
+    padding: 1rem;
+}
+.yellow-strip{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: #faa018;
+}
+
+.card-actions {
+    margin-block-start: 2rem;
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+.cards {
+    margin: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-block-end: 2rem;
 }
